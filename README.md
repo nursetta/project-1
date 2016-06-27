@@ -22,7 +22,7 @@ Your app must:
 * **Include separate HTML / CSS / JavaScript files**
 * Stick with **KISS (Keep It Simple Stupid)** and **DRY (Don't Repeat Yourself)** principles
 * Use **Javascript or jQuery** for **DOM manipulation**
-* **Deploy your game online**, where the rest of the world can access it (there will be a quick tutorial on this later in the week)
+* **Deploy your game online**, where the rest of the world can access it (think GitHub pages)
 * Use **semantic markup** for HTML and CSS (adhere to best practices)
 
 ---
