@@ -30,10 +30,9 @@ table {
 
 }
 td {
-  margin: 10%;
-  border: 2px solid #12F389;
-  width: 150px;
-  height: 150px;
+  border: 2px solid orange;
+  width: 100px;
+  height: 100px;
   text-align: center;
   font-size: 60pt;
   font-family: Comic Sans MS;
@@ -45,9 +44,9 @@ td {
 }
 
 @-webkit-keyframes boxes {
-    0%   {border: solid #08AFE3; left:0px; top:0px;}
-    50%  {border: solid #11E57E; left:200px; top:0px;}
-    100%  {border: solid #08AFE3; left:200px; top:200px;}
+    0%   {border: solid orange; left:0px; top:0px;}
+    50%  {border: solid white; left:200px; top:0px;}
+    100%  {border: solid orange; left:200px; top:200px;}
     }
 
 button {

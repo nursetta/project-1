@@ -3,24 +3,32 @@
 <head>
 	<title>Matching Game</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<script type="text/javascript" src = "java/tictactoe.js"> </script>
+	<script type="text/javascript" src = "java/javascript.js"> </script>
 </head>
 <body>
-	<h1> Matching Game </h1>
 	
-	<div class = "button">
+    <h1> Matching Game </h1>	
+	
+    <div class = "button">
 		<button class = "reset"> Start! </button>
 	</div>
+        
+    <table id="memoryBoard">
+        <tr class="row1">
+            <td id="1">?</td>
+            <td id="2">?</td>
+        </tr>
+        <tr class="row2">
+            <td id="4">?</td>
+            <td id="5">?</td>
+        </tr>
+    </table>
 
-        <table id="board">
-            <tr class="row1">
-                <td id="1"></td>
-                <td id="2"></td>
-            </tr>
-            <tr class="row2">
-                <td id="4"></td>
-                <td id="5"></td>
-            </tr>
-        </table>
+    <div id="counter">
+    <p>No. of Attempts</p>
+    <div id ="attempts">0</div>
+    </div>
+    <p><a href="javascript:shuffle();">Shuffle Cards</a></p>
+
 </body>
 </html>
