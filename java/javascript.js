@@ -1,5 +1,6 @@
 
 window.onload = start;
+
 var picks = 0;
 var backOfCard = "?";
 var cards = document.getElementsByTagName('td');
@@ -21,7 +22,7 @@ var tile = event.target;
 //if yes, replace questionmark with tile index of element.
 //if no, do nothing.
 //shuffle cards
-	if (tile.textContent == "?") {
+//if (tile.textContent == "?") {
 	if (picks === 0 || picks == 1) {
 	var tileId = parseInt(tile.getAttribute('id'));	
     tile.textContent = tiles[tileId];
@@ -31,11 +32,15 @@ var tile = event.target;
   	console.log(newTiles);
   } 
  if (picks == 2) { 
- 	check(newTiles);
- 	newTiles = [];
+ 	setTimeout(function() {
+ 		console.log(newTiles);
+ 		check(newTiles);
+ 		newTiles = [];
+ 	}, 500);
+ 
 
  	}
-	}
+	//}
 }
 
 function check(tileArray) {
@@ -60,6 +65,7 @@ function check(tileArray) {
 
 function resetTiles(tileIds) {
 // changing text content back to question mark
+
 	for (i =0; i < tileIds.length; i++) {
 		var cards = document.getElementsByTagName('td');
 		cards[tileIds[i]].textContent = '?';	
@@ -69,5 +75,6 @@ function resetTiles(tileIds) {
 	}
 
 }
+
 
 
