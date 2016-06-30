@@ -2,7 +2,8 @@
 window.onload = start;
 
 var picks = 0;
-var tiles = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H'];
+var tiles = ['A', 'B', 
+			 'A', 'B'];
 var newTiles = [];
 var matches = 0;
 
