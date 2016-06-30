@@ -1,15 +1,14 @@
 
 body {
     background-color: grey;
-  	background-repeat: no-repeat;
-  	background-position: center center;
-  	background-attachment: fixed;
-  	background-size: cover;
-
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1 {
-    color: orange;
+    color: #12F389;
     text-align: center;
     font-size: 42pt;
     font-family: Comic Sans MS;
@@ -18,17 +17,16 @@ h1 {
     -webkit-animation-duration: 6s; 
     animation-name: TicTacToe;
     animation-iteration-count: infinite;
-}
-@-webkit-keyframes TicTacToe {
-    0%   {color:orange; left:0px; top:0px;}
-    50%  {color:white; left:200px; top:0px;}
-    100%  {color:orange; left:200px; top:200px;}
+} @-webkit-keyframes TicTacToe {
+    0%   {color:#11E57E; left:0px; top:0px;}
+    50%  {color:#08AFE3; left:200px; top:0px;}
+    100%  {color:#11E57E; left:200px; top:200px;}
     }
 
 table {
   margin: auto;
-
 }
+
 td {
   border: 2px solid orange;
   width: 100px;
@@ -41,41 +39,58 @@ td {
    -webkit-animation-duration: 6s; 
    animation-name: boxes;
    animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes boxes {
-    0%   {border: solid orange; left:0px; top:0px;}
-    50%  {border: solid white; left:200px; top:0px;}
-    100%  {border: solid orange; left:200px; top:200px;}
+} @-webkit-keyframes boxes {
+    0%   {border: solid #11E57E; left:0px; top:0px;}
+    50%  {border: solid #08AFE3; left:200px; top:0px;}
+    100%  {border: solid #11E57E; left:200px; top:200px;}
     }
 
 button {
-	margin: 10px;
-    color: orange;
-    border: 2px solid white;
+    margin: 10px;
+    color: #12F389;
+    border: 2px solid #12F389;
     height: 50px;
     width: 130px;
     font-family: Comic Sans MS;
     font-size: 14pt;
     background-color: transparent;
-
-}
-
-button:hover {
-    background-color: orange;
+} button:hover {
+    background-color: #08AFE3;
     color: black;
+}
+
+a {
+    margin: 5px;
+    padding: 5px;
+    color: #12F389;
+    border: 2px solid #12F389;
+    height: 50px;
+    width: 130px;
+    font-family: Comic Sans MS;
+    font-size: 14pt;
+    background-color: transparent; 
+    text-align: center;
 
 }
+p {
+text-align: center;
+margin: 3px;
+
+}
+
 .button {
-	text-align: center;
+    text-align: center;
 }
-.X {
-  color: #11E57E;
-} 
 
-.O {
-  color: #08AFE3;
+.numberOfAttempts {
+  text-align: center;
+  font-size: 24pt;
+  margin: 10px;
+  color: white;
+  border: 2px solid white;
+  border-width: 10%;
 }
-.clearbackground {
-	background: none;
+
+.levels {
+    margin-top: 5%;
 }
