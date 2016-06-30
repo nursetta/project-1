@@ -5,7 +5,6 @@ body {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-
 }
 
 h1 {
@@ -18,8 +17,7 @@ h1 {
     -webkit-animation-duration: 6s; 
     animation-name: TicTacToe;
     animation-iteration-count: infinite;
-}
-@-webkit-keyframes TicTacToe {
+} @-webkit-keyframes TicTacToe {
     0%   {color:#11E57E; left:0px; top:0px;}
     50%  {color:#08AFE3; left:200px; top:0px;}
     100%  {color:#11E57E; left:200px; top:200px;}
@@ -27,8 +25,8 @@ h1 {
 
 table {
   margin: auto;
-
 }
+
 td {
   border: 2px solid orange;
   width: 100px;
@@ -41,9 +39,7 @@ td {
    -webkit-animation-duration: 6s; 
    animation-name: boxes;
    animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes boxes {
+} @-webkit-keyframes boxes {
     0%   {border: solid #11E57E; left:0px; top:0px;}
     50%  {border: solid #08AFE3; left:200px; top:0px;}
     100%  {border: solid #11E57E; left:200px; top:200px;}
@@ -58,26 +54,39 @@ button {
     font-family: Comic Sans MS;
     font-size: 14pt;
     background-color: transparent;
-
-}
-
-button:hover {
+} button:hover {
     background-color: #08AFE3;
     color: black;
+}
+
+a {
+    margin: 5px;
+    padding: 5px;
+    color: #12F389;
+    border: 2px solid #12F389;
+    height: 50px;
+    width: 130px;
+    font-family: Comic Sans MS;
+    font-size: 14pt;
+    background-color: transparent; 
 
 }
+p {
+text-align: center;
+}
+
 .button {
     text-align: center;
 }
-.X {
-  color: #11E57E;
-} 
 
-.O {
-  color: #08AFE3;
-}
-.clearbackground {
-    background: none;
+.number {
+  padding-left: -20%;
+  padding-right: -20%;
+  text-align: center;
+  font-size: 24pt;
+  margin: 10px;
+  color: #12F389;
+  border: 2px solid #12F389;
 }
 
 

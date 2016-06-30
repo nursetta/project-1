@@ -5,11 +5,10 @@ body {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-
 }
 
 h1 {
-    color: #12F389;
+    color: #E2EC48;
     text-align: center;
     font-size: 42pt;
     font-family: Comic Sans MS;
@@ -18,19 +17,18 @@ h1 {
     -webkit-animation-duration: 6s; 
     animation-name: TicTacToe;
     animation-iteration-count: infinite;
+} @-webkit-keyframes TicTacToe {
+    0%   {color:#E2EC48; left:0px; top:0px;}
+    50%  {color:#5248ec; left:200px; top:0px;}
+    100%  {color:#E2EC48; left:200px; top:200px;}
 }
-@-webkit-keyframes TicTacToe {
-    0%   {color:Orange; left:0px; top:0px;}
-    50%  {color:White; left:200px; top:0px;}
-    100%  {color:Orange; left:200px; top:200px;}
-    }
 
 table {
   margin: auto;
-
 }
+
 td {
-  border: 2px solid orange;
+  border: 2px #5248ec;
   width: 100px;
   height: 100px;
   text-align: center;
@@ -41,43 +39,51 @@ td {
    -webkit-animation-duration: 6s; 
    animation-name: boxes;
    animation-iteration-count: infinite;
+} @-webkit-keyframes boxes {
+    0%   {border: solid #E2EC48; left:0px; top:0px;}
+    50%  {border: solid #5248ec; left:200px; top:0px;}
+    100%  {border: solid #E2EC48; left:200px; top:200px;}
 }
-
-@-webkit-keyframes boxes {
-    0%   {border: solid #11E57E; left:0px; top:0px;}
-    50%  {border: solid #08AFE3; left:200px; top:0px;}
-    100%  {border: solid #11E57E; left:200px; top:200px;}
-    }
 
 button {
     margin: 10px;
-    color: #12F389;
-    border: 2px solid #12F389;
+    color: #5248ec;
+    border: 2px solid #5248ec;
     height: 50px;
     width: 130px;
     font-family: Comic Sans MS;
     font-size: 14pt;
     background-color: transparent;
-
-}
-
-button:hover {
-    background-color: #08AFE3;
+} button:hover {
+    background-color: #e2ec48;
     color: black;
-
 }
+
+a {
+    margin: 5px;
+    padding: 5px;
+    color: #E2EC48;
+    border: 2px solid #E2EC48;
+    height: 50px;
+    width: 130px;
+    font-family: Comic Sans MS;
+    font-size: 14pt;
+    background-color: transparent; 
+
+} p {
+text-align: center;
+}
+
 .button {
     text-align: center;
 }
-.X {
-  color: #11E57E;
-} 
 
-.O {
-  color: #08AFE3;
-}
-.clearbackground {
-    background: none;
+.number {
+  text-align: center;
+  font-size: 24pt;
+  margin: 10px;
+  color: #E2EC48;
+  border: 2px solid #E2EC48;
 }
 
 

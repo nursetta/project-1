@@ -7,6 +7,7 @@ var tiles = ['A', 'F', 'B', 'B',
 			 'A', 'E', 'C', 'F'];
 var newTiles = [];
 var matches = 0;
+var attempts = 0;
 
 function start() {
     var cards = document.getElementsByTagName('td');
@@ -30,6 +31,7 @@ var tile = event.target;
 	} 
  
  if (picks == 2) { 
+  	attempts ++;	
  	setTimeout(function() {
  		console.log(newTiles);
  		check(newTiles);
@@ -45,6 +47,7 @@ function check(tileArray) {
 	matches ++;
 	picks = 0;
 	matching();
+	document.getElementById("attempts").textContent = attempts;
 	}
 //then leave them as they are.
 	else {
@@ -52,6 +55,7 @@ function check(tileArray) {
 		resetTiles([tileArray[1], tileArray[3]]);
 		picks = 0;
 		newTiles = [];
+		document.getElementById("attempts").textContent = attempts;
 	}
 //If the two tiles dont match,
 //then change them back to question marks	
@@ -66,10 +70,9 @@ function resetTiles(tileIds) {
 }
 
 function matching() {
+	document.getElementById("attempts").textContent = attempts;	
 	if (matches == (document.getElementsByTagName('td').length * 0.5)) {
 	alert("You WON!" + " " + "Click OK to play Again!");
 	window.location.reload();
 	}
 }
-
-
