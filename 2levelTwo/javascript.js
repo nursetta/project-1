@@ -20,15 +20,21 @@ function choose(event) {
 var tile = event.target;
 //if yes, replace questionmark with tile index of element.
 //if no, do nothing.
+	
 	if (picks === 0 || picks == 1) {
+	
 	var tileId = parseInt(tile.getAttribute('id'));	
+	if (newTiles[1] == tileId ) {
+		alert("Pleae choose another tile");
+	} else {
     tile.textContent = tiles[tileId];
     newTiles.push(tiles[tileId]);
     newTiles.push(tileId);
   	picks ++;
   	console.log(newTiles);
 	} 
- 
+}
+
  if (picks == 2) { 
   	attempts ++;	
  	setTimeout(function() {
@@ -48,6 +54,7 @@ function check(tileArray) {
 	matching();
 	document.getElementById("attempts").textContent = attempts;
 	}
+
 //then leave them as they are.
 	else {
 		console.log('changing back to question mark');
