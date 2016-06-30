@@ -1,0 +1,97 @@
+
+body {
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    color: #e54e3c;
+    text-align: center;
+    font-size: 42pt;
+    font-family: Comic Sans MS;
+    margin: 10px;
+    -webkit-animation-name: TicTacToe; 
+    -webkit-animation-duration: 6s; 
+    animation-name: TicTacToe;
+    animation-iteration-count: infinite;
+} @-webkit-keyframes TicTacToe {
+    0%   {color:#e54e3c; left:0px; top:0px;}
+    50%  {color:#e5a33c; left:200px; top:0px;}
+    100%  {color:#e54e3c; left:200px; top:200px;}
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  border: 2px solid #e54e3c;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 60pt;
+  font-family: Comic Sans MS;
+  color: white;
+   -webkit-animation-name: boxes; 
+   -webkit-animation-duration: 6s; 
+   animation-name: boxes;
+   animation-iteration-count: infinite;
+} @-webkit-keyframes boxes {
+    0%   {border: solid #e54e3c; left:0px; top:0px;}
+    50%  {border: solid #e5a33c; left:200px; top:0px;}
+    100%  {border: solid #e54e3c; left:200px; top:200px;}
+}
+
+button {
+    margin: 10px;
+    color: #e5a33c;
+    border: 2px solid #e5a33c;
+    height: 50px;
+    width: 130px;
+    font-family: Comic Sans MS;
+    font-size: 14pt;
+    background-color: transparent;
+} button:hover {
+    background-color: #e54e3c;
+    color: black;
+}
+
+a {
+    margin: 5px;
+    padding: 5px;
+    color: #e54e3c;
+    border: 2px solid #e54e3c;
+    height: 50px;
+    width: 130px;
+    font-family: Comic Sans MS;
+    font-size: 14pt;
+    background-color: transparent; 
+
+} p {
+text-align: center;
+margin: 3px;
+}
+
+.button {
+    text-align: center;
+}
+
+.numberOfAttempts {
+  text-align: center;
+  font-size: 24pt;
+  margin: 10px;
+  color: white;
+  border: 2px solid white;
+  border-width: 10%;
+}
+
+.levels {
+    margin-top: 5%;
+}
+
+
+
+
