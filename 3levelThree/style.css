@@ -72,18 +72,24 @@ a {
 
 } p {
 text-align: center;
+margin: 3px;
 }
 
 .button {
     text-align: center;
 }
 
-.number {
+.numberOfAttempts {
   text-align: center;
   font-size: 24pt;
   margin: 10px;
-  color: #84c34f;
-  border: 2px solid #84c34f;
+  color: #12F389;
+  border: 2px solid #12F389;
+  border-width: 10%;
+}
+
+.levels {
+    margin-top: 5%;
 }
 
 
